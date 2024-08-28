@@ -20,7 +20,7 @@ services:
       PGPT_PROFILES: docker
       PGPT_MODE: ollama
       PGPT_EMBED_MODE: ollama
-      PGPT_OLLAMA_API_BASE: http://localhost:11434
+      PGPT_OLLAMA_API_BASE: http://192.168.80.4:11434
       HF_TOKEN: ${HF_TOKEN:-}
     profiles:
       - ""
