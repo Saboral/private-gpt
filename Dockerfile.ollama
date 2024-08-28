@@ -36,7 +36,7 @@ ARG UID=100
 # GID 65534 is often used for the 'nogroup' or 'nobody' group
 ARG GID=65534
 
-RUN adduser --gid ${GID} --uid ${UID} --home /home/worker worker
+RUN adduser worker
 WORKDIR /home/worker/app
 
 RUN chown worker /home/worker/app
